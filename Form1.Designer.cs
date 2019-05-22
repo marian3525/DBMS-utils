@@ -80,6 +80,7 @@
             this.addButton.TabIndex = 3;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // updateButton
             // 
@@ -89,6 +90,7 @@
             this.updateButton.TabIndex = 4;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // removeButton
             // 
@@ -98,6 +100,7 @@
             this.removeButton.TabIndex = 5;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // textBox1
             // 
@@ -166,6 +169,7 @@
             this.Controls.Add(this.dataGridParent);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridParent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridChild)).EndInit();
             this.ResumeLayout(false);
